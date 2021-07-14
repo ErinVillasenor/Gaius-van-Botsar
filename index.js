@@ -16,12 +16,6 @@ client.on("ready", () => {
 })
 
 client.on("message", msg => {
-  if (msg.content === "ping"){
-    msg.reply("pog")
-  }
-})
-
-client.on("message", msg => {
   if (msg.content.toUpperCase().includes(devaString.toUpperCase())){
     msg.reply("This was NOT my intention")
   }
